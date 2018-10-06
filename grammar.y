@@ -105,7 +105,7 @@ int yylex();
 
 /* Bison does NOT implement yyerror, so define it here */
 void yyerror (char *string){
-  printf ("Syntax error %s %s\n",string,yytext);
+  printf ("Syntax error %s\n",yytext);
 }
 
 /* Bison does NOT define the main entry point so define it here */

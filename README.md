@@ -33,13 +33,13 @@ Systantic Analyzer for Programming Languages Class. This program acts as a compl
 1. Use a real OS
 
 ### Linux Users
-1. Compile the calc_grammar.y file using  ```bison -d calc_grammar.y```
+1. Compile the calc_grammar.y file using  ```bison -d grammar.y```
 2. Compile the analyzer.l file using ```flex analyzer.l```
 3. Files named lex.yy.c,calc_grammar.tab.c and calc_grammar.tab.h are generated, that is compiled using gcc with the following command ```gcc calc_grammar.tab.c -o calc -lfl```
 4. An output file is generated named a.out, or if using the -o flag, it will have the name indicated.
 
 ### Mac Users
-1. Compile the calc_grammar.y file using  ```bison -v calc_grammar.y```
+1. Compile the calc_grammar.y file using  ```bison -v grammar.y```
 2. Compile the analyzer.l file using ```flex analyzer.l```
 3. Files named lex.yy.c,calc_grammar.tab.c and calc_grammar.tab.h are generated, that is compiled using gcc with the following command ```gcc calc_grammar.tab.c -o calc -ll```
 4. An output file is generated named a.out, or if using the -o flag, it will have the name indicated.
@@ -56,4 +56,4 @@ Systantic Analyzer for Programming Languages Class. This program acts as a compl
 1. To input a file to analyze use ```./name.out < filename.*```
 
 # Output generated
-The Program will indicate if the syntax is correct or if there is a syntax error
+The Program will indicate if the syntax is correct with the message "Good Grammar" or if there is a syntax error it will indicate the string where it was found
